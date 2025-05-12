@@ -1,0 +1,109 @@
+body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: #000;
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    #cameraSection {
+      position: relative;
+      margin: 2rem auto;
+      width: 80%;
+      max-width: 640px;
+      border: 3px solid #00ffc8;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: opacity 1s ease;
+    }
+
+    video {
+      width: 100%;
+      height: auto;
+    }
+
+    #faceBox {
+      position: absolute;
+      pointer-events: none;
+      transition: top 0.1s, left 0.1s;
+    }
+
+    #faceBox span {
+      font-size: 3rem;
+      position: absolute;
+      animation: bounce 1s ease-in-out infinite;
+      transition: transform 0.2s ease;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    header {
+      background: #111;
+      padding: 2rem;
+    }
+
+    #typingTitle {
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      animation: typing 2s steps(40) 1s forwards;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+
+    footer {
+      padding: 2rem 1rem;
+      background-color: #111;
+      font-size: 1rem;
+      color: #00ffc8;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .btn {
+      background-color: #00ffc8;
+      color: #000;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #00e5b0;
+    }
+
+    #formSection {
+      margin-top: 2rem;
+    }
+
+    input[type="tel"] {
+      padding: 0.5rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      width: 250px;
+    }
+
+    canvas {
+      margin-top: 1rem;
+      border: 2px solid #00ffc8;
+      border-radius: 8px;
+    }
